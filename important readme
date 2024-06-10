@@ -1,0 +1,14 @@
+'''
+說明文件(yolov8檔案在ultralytics內)
+在終端機執行pip install ultralytics
+如何用custom data做detection
+1.在終端機執行hw1_download.sh下載pretrain model以及訓練後的checkpoint
+2.執行hw1.sh 輸入三個參數 一為輸入圖像的路徑 二為剛剛下載的checkpoint的路徑 三為輸出json檔的路徑
+輸出檔案放在ultralytics/detect_json內 可供參考
+如何重現實驗
+1.先執行txtrans.py 將json格式轉為yolo所接收的格式(.txt)
+2.根據cvpdl.yaml將txt檔放成指定格式
+3.在終端機執行指令：
+yolo detect train data=./ultralytics/datasets/cvpdl.yaml model=yolov8m.yaml epochs=300 imgsz=640 pretrained= pretrain model
+pretrained放前面下載的pretrain model data放yaml檔的位置
+'''
