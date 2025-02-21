@@ -1,4 +1,3 @@
-# NTU-cvpdl-HW1
+# Object detection on custom dataset
 Course in NTU:computer vision practice with deep learning
-<br/>
-HW1-Object detection
+
